@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { View, Text } from 'react-native';
 import { ThemeContext } from '../contexts/ThemeContext'; // Importa el contexto
 
-export default function HomeScreen({ navigation }) {
+export default function MyClubsScreen() {
     const { theme } = useContext(ThemeContext); // Obtén el tema actual
 
     return (
@@ -14,7 +14,7 @@ export default function HomeScreen({ navigation }) {
                 backgroundColor: theme === 'light' ? '#ffffff' : '#000000', // Fondo según el tema
             }}
         >
-            <Text style={{ color: theme === 'light' ? '#000000' : '#ffffff' }}>Home Screen</Text>
+            <Text style={{ color: theme === 'light' ? '#000000' : '#ffffff' }}>My Teams Screen</Text>
         </View>
     );
 }
